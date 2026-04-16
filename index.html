@@ -71,7 +71,10 @@
       display: block;
       margin-top: 1px;
     }
-    .btn-action { font-size: 12px; opacity: 0.6; }
+    .btn-action { display: none; font-size: 12px; opacity: 0.6; }
+    @media (min-width: 370px) {
+      .btn-action { display: block; }
+    }
     .btn-instagram { background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045); color: #fff; }
     .btn-tiktok { background: #111; color: #fff; border: 1px solid rgba(255,255,255,0.12); }
     .btn-facebook { background: #1877f2; color: #fff; }

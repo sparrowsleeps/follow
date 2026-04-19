@@ -151,5 +151,16 @@
 
   </div>
 
+  <script>
+    document.querySelectorAll('.btn-list .btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const platform = [...btn.classList]
+          .find(c => c.startsWith('btn-') && c !== 'btn')
+          ?.replace('btn-', '');
+        if (platform) gtag('event', 'platform_click', { platform });
+      });
+    });
+  </script>
+
 </body>
 </html>

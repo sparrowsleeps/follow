@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'Calibre';
+  src: url('fonts/CalibreRegular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src: url('fonts/CalibreBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  min-height: 100vh;
+  background: #1a1a2e url('bg.png') center center / cover no-repeat fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+  font-family: 'Calibre', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.logo-area {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.logo-area h1 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 6px;
+  letter-spacing: 0.5px;
+}
+
+.logo-area p {
+  color: rgba(255,255,255,0.55);
+  font-size: 15px;
+}
+
+.btn-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  max-width: 340px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 20px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Calibre', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  text-decoration: none;
+  width: 100%;
+  transition: opacity 0.15s;
+}
+
+.btn:hover { opacity: 0.88; }
+
+.btn-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.btn-label { flex: 1; text-align: left; }
+
+.btn-sub {
+  font-size: 12px;
+  font-weight: 400;
+  opacity: 0.7;
+  display: block;
+  margin-top: 1px;
+}
+
+.btn-action { display: none; font-size: 12px; opacity: 0.6; }
+
+@media (min-width: 370px) {
+  .btn-action { display: block; }
+}
+
+.btn-instagram { background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045); color: #fff; }
+.btn-tiktok { background: #111; color: #fff; border: 1px solid rgba(255,255,255,0.12); }
+.btn-facebook { background: #1877f2; color: #fff; }
+.btn-spotify { background: #1db954; color: #fff; }
+.btn-apple { background: linear-gradient(135deg, #fc3c44, #cc0a0a); color: #fff; }
+.btn-youtube { background: #ff0000; color: #fff; }
